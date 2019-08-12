@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagement.OccupantsListController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Resort.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="ctable" opacity="0.61" prefHeight="600.0" prefWidth="420.0">
+         <columns>
+            <TableColumn fx:id="id" editable="false" prefWidth="60" text="ID" />
+            <TableColumn fx:id="firstNameCol" prefWidth="120" text="First Name" />
+            <TableColumn fx:id="middleNameCol" prefWidth="120" text="Middle Name" />
+            <TableColumn fx:id="lastNameCol" prefWidth="120" text="Last Name" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+   </children>
+</AnchorPane>

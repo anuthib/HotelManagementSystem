@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagement.BookingPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Resort.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="78.0" text="Customer ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="149.0" text="First Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="149.0" text="Middle Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="150.0" text="Last Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="643.0" layoutY="227.0" text="Room No. :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="224.0" text="Contact No. :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="300.0" text="Email ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="382.0" text="Residence :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="455.0" text="City :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="455.0" text="State :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="227.0" text="Room Category :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fName" layoutX="118.0" layoutY="147.0" />
+      <TextField fx:id="mName" layoutX="416.0" layoutY="147.0" />
+      <TextField fx:id="lName" layoutX="697.0" layoutY="147.0" prefHeight="26.0" prefWidth="180.0" />
+      <Label layoutX="541.0" layoutY="78.0" text="Reservation Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contact" layoutX="118.0" layoutY="220.0" />
+      <TextField fx:id="email_id" layoutX="114.0" layoutY="296.0" prefHeight="26.0" prefWidth="503.0" />
+      <TextField fx:id="residence" layoutX="114.0" layoutY="378.0" prefHeight="22.0" prefWidth="738.0" />
+      <TextField fx:id="city" layoutX="114.0" layoutY="455.0" />
+      <TextField fx:id="state" layoutX="424.0" layoutY="455.0" />
+      <DatePicker fx:id="rDate" layoutX="662.0" layoutY="75.0" />
+      <ChoiceBox fx:id="roomCategory" layoutX="473.0" layoutY="223.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="roomNo" layoutX="726.0" layoutY="223.0" prefWidth="150.0" />
+      <Button layoutX="673.0" layoutY="520.0" mnemonicParsing="false" onAction="#confirmBooking" prefHeight="55.0" prefWidth="202.0" style="-fx-background-color: #000000;" text="CONFIRM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="36.0" layoutY="522.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="&lt;--" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="status" layoutX="194.0" layoutY="535.0" prefHeight="26.0" prefWidth="424.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_id" layoutX="125.0" layoutY="78.0" prefHeight="18.0" prefWidth="138.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
